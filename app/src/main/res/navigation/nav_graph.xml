@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.appdemo.HomeFragment"
+        android:label="Главная">
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.appdemo.FavoritesFragment"
+        android:label="Избранное" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.appdemo.AccountFragment"
+        android:label="Аккаунт" />
+
+</navigation>
